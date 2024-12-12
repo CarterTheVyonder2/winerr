@@ -1,33 +1,68 @@
-<!DOCTYPE html>
-<html lang="((lang))">
+<!DOCTYPE 
+h
+tml>
+<
+h
+tml lang="((lang))">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="website.css">
+<
+h
+ead>
+    <meta c
+h
+arset="UTF-8">
+    <meta name="viewport" content="widt
+h
+=device-widt
+h
+, initial-scale=1.0">
+    <link rel="styles
+h
+eet" h
+ref="website.css">
     <meta name="description"
-        content="This is an accurate and fast Windows error message generator that works on the web!">
-    <meta name="theme-color" content="#CA0A0A">
+        content="T
+h
+is is an accurate and fast Windows error message generator t
+h
+at works on t
+h
+e web!">
+    <meta name="t
+h
+eme-color" content="#CA0A0A">
     <meta property="og:title" content="Windows Error Message Generator" />
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:description"
-        content="This is an accurate and fast Windows error message generator that works on the web!" />
-    <meta property="og:site_name" content="shikoshib">
+        content="T
+h
+is is an accurate and fast Windows error message generator t
+h
+at works on t
+h
+e web!" />
+    <meta property="og:site_name" content="s
+h
+ikos
+h
+ib">
     <script src="pako.min.js"></script>
-    <link rel="shortcut icon" href="/svg/winerr.svg" type="image/x-icon">
-    <title>((title))</title>
-    <style>
-        body {
-            overflow-y: hidden;
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-    </style>
+    <link rel="s
+h
+ortcut icon" h
+ref="/svg/winerr.svg" type="image/x-icon">
+    <title>s
+h
+ikos
+h
+ib</title>
     <script>
         let version = `((version))`;
-        let iconsLength = Number(`((icons-length))`);
+        let iconsLengt
+h = Number(`((icons-lengt
+h
+))`);
         let pleaseWait = `((please-wait))`;
         let loadingAssets = `((loading-assets))`;
         let extractingAssets = `((extracting-assets))`;
@@ -37,27 +72,41 @@
         let init = "((init))";
         let browserWarn = `((browser-warn))`;
         let warning = `((attention))`;
-        let warningWidth = `((warning-width))`;
+        let warningWidt
+h = `((warning-widt
+h
+))`;
     </script>
-</head>
+</
+h
+ead>
 
 <body>
     <div id="winerr-bg"></div>
-    <header>
+    <
+h
+eader>
         <div class="navbar">
-            <a href="/">
+            <a h
+ref="/">
                 <div class="sksb-icon"></div>
                 <span class="sksb-name">winerr</span>
             </a>
         </div>
-    </header>
+    </
+h
+eader>
     <canvas id="canvas" class="core"></canvas>
     <canvas id="test-canvas" class="core"></canvas>
     <div id="modal-overlay"></div>
     <div class="modal-wrapper">
         <div class="modal">
             <div class="modal-title-wrapper title-warn">
-                <img src="./svg/hourglass.svg" class="modal-icon hourglass">
+                <img src="./svg/
+h
+ourglass.svg" class="modal-icon 
+h
+ourglass">
                 <span class="modal-title">((please-wait))</span>
                 <div class="modal-space"></div>
                 <img src="./svg/cross.svg" class="modal-cross">
@@ -67,17 +116,29 @@
     </div>
 
     <div class=" lang-wrapper">
-        <select id="lang-select" onchange='
+        <select id="lang-select" onc
+h
+ange='
         let langElem = document.querySelector("#lang-select");
-        let chosenLang = langElem.value;
+        let c
+h
+osenLang = langElem.value;
 
-        // Set the language cookie for 100 years
+        // Set t
+h
+e language cookie for 100 years
         var expirationDate = new Date();
         expirationDate.setFullYear(expirationDate.getFullYear() + 100);
-        document.cookie=`winerrLang=${chosenLang}; expires=${expirationDate.toUTCString()}; path=/`;
+        document.cookie=`winerrLang=${c
+h
+osenLang}; expires=${expirationDate.toUTCString()}; pat
+h
+=/`;
         location.reload();
             '>
-            <option value="en">English</option>
+            <option value="en">Englis
+h
+</option>
             <option value="es">Español</option>
             <option value="ro">Română</option>
             <option value="ru">Русский</option>
